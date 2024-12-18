@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Deepak B V</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Header Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.hero nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero nav ul li {
+    margin: 0;
+}
+
+.hero nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero nav ul li a:hover {
+    background-color: #3498db;
+}
+
+.hero .intro {
+    margin-top: 20px;
+}
+
+.hero .intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero .intro p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#skills ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+#skills ul li::before {
+    content: '\2022';
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f8f8f8;
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    color: #3498db;
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #2c3e50;
+}
+
+/* Contact Section */
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>Hello, I'm Deepak B V</h1>
+            <p>Aspiring Software Developer | IoT Enthusiast | Cloud Computing Learner</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Master of Computer Applications (MCA) student with a strong passion for software development,
+            cloud computing, and IoT systems. My expertise lies in Cloud Computing, DevOps tools, and programming languages like Java and Python.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Java, Python, Bash/Shell Scripting</li>
+            <li>DevOps: Terraform, Ansible, CI/CD</li>
+            <li>Cloud: AWS, Virtualization</li>
+            <li>Networking</li>
+            <li>Database: SQL</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Vehicle Parking System</h3>
+            <p>
+                Designed an Arduino-based system to measure distance and provide feedback with beep sounds for parking assistance.
+            </p>
+            <a href="#">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Humidity Sensor Integration</h3>
+            <p>
+                Interfaced a humidity sensor with Arduino to display real-time data on the serial monitor.
+            </p>
+            <a href="#">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your-email@example.com">bvdeepak69@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/bvdeepak" target="_blank">https://github.com/bvdeepak</a></p>
+        <p>LinkedIn: <a href="
+
+https://www.linkedin.com/in/bvdeepak06/" target="_blank">
+
+https://www.linkedin.com/in/bvdeepak06/</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+https://www.linkedin.com/in/bvdeepak06/
